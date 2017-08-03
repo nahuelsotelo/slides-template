@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title></title>
+
+    <meta name="description" content="Escuela IT - Herramientas Frontend">
+    <meta name="author" content="Nahuel Sotelo">
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme.css" id="theme">
+
+    <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+    <script>
+        if( window.location.search.match( /print-pdf/gi ) ) {
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+            link.href = 'css/print/pdf.css';
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
+        }
+    </script>
+
+    <!--[if lt IE 9]>
+    <script src="lib/js/html5shiv.js"></script>
+    <![endif]-->
+</head>
+
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <section>
+        <h1>Lean Experiment Map</h1>
+      </section>
+
+      <section data-transition="slide-in fade-out">
+    <h3>Hypotesis-Driven User stories</h3>
+    <div class="hypotesis">
+        <div>
+            <img src="./img/elise.jpg" alt="">
+        </div>
+        <div>
+            <p>Is the way to go.</p>
+            <p class="fragment">but...</p>
+            <p class="fragment">We tend to forget them when they reach the <strong class="u-marked">done</strong> column.</p>
+        </div>
+    </div>
+</section>
+
+<section data-transition="fadei-in slide-out">
+    <h3>Hypotesis-Driven User stories</h3>
+    <div class="hypotesis">
+        <div class="hypotesis_img">
+            <img src="./img/sad.gif" alt="">
+        </div>
+        <div>
+            <p>Is the way to go.</p>
+            <p>but...</p>
+            <p>We tend to forget them when they reach the <strong class="u-marked">done</strong> column.</p>
+            <p>...and never iterate.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h3>Welcome, Lean Experiment Map</h3>
+    <div>
+        <img src="./img/lean_experiment_map.jpg" alt=""
+        style="display: block; margin: 0 auto; height: 45vh";>
+    </div>
+</section>
+
+<section>
+    <h3>
+        Build. Measure. Learn. <span class="fragment u-highlighted">Repeat.</span>
+    </h3>
+    <div>
+        <img src="./img/iteration.jpg" alt=""
+        style="display: block; margin: 0 auto; height: 45vh";>
+    </div>
+</section>
+
+<section>
+    <h3>Leap of Faith</h3>
+    <p>The most critical assumption you are making about your idea at this time, for which you have the least amount of evidence.</p>
+    <p class="example">Users doesn't read the explanation lightbox of our fragment because they perceive the information there has no value for them.</p>
+</section>
+
+<section>
+    <ol>
+        <li>
+            <h4>Hypotesis</h4>
+            <p class="example example--small">If we add the price and the amount of money users saves according to our estimation to the explanation, then they are going to spend 20% more time reading the information.</p>
+        </li>
+        <li>
+            <h4>Experiment</h4>
+            <p class="example example--small">Prototype of the explanation with price and savings. A/B test + User test. </p>
+
+        </li>
+        <li>
+            <h4>Behavior</h4>
+            <p class="example example--small">Measure how much time lightbox remains open. Investigate how Savings number impact in leads</p>
+        </li>
+        <li>
+            <h4>Target Metric</h4>
+            <p class="example example--small">20% increase in lightbox opened time.</p>
+        </li>
+    </ol>
+    <aside class="notes">
+		<ul>
+            <li>Hypotesis -> measurable</li>
+            <li>Experiment -> let room for surprises (not just confirm)</li>
+            <li>Behavior -> No surveys!</li>
+        </ul>
+	</aside>
+</section>
+
+<section>
+<h3>Launch experiment!</h3>
+    <div>
+        <img src="./img/experiment.gif" alt=""
+        style="display: block; margin: 0 auto; height: 45vh";>
+    </div>
+</section>
+
+<section>
+    <ol>
+        <li>
+            <h4>Actual Results</h4>
+            <p class="example example--small">Lightbox opened time was reduced instead of increased. Cars with higer savings amounts get more leads.</p>
+        </li>
+        <li>
+            <h4>Why?</h4>
+            <p class="example example--small">Users seems to check only the table with the numbers and skip the rest of the content.</p>
+
+        </li>
+        <li>
+            <h4>New Insights</h4>
+            <p class="example example--small">Users doesn't care about why they save money, only in the amount of money they save.</p>
+        </li>
+        <li>
+            <h4>Decision</h4>
+            <p class="example example--small">Add price savings under the price.<br/> Compare total savings vs saving porcentage.</p>
+        </li>
+    </ol>
+    <aside class="notes">
+		<ul>
+            <li>Actual Results -> Record actual metrics. Atention to new insights</li>
+            <li>Why? -> Observ</li>
+            <li>New Insights -> Change / complement my initial assumption</li>
+            <li>Decision -> Next step</li>
+        </ul>
+	</aside>
+</section>
+
+<section>
+    <h2>...and repeat. <span class="fragment u-highlighted">Thanks!</span></h2>
+</section>
+
+
+    </div>
+  </div>
+
+  <script src="js/reveal/head.min.js"></script>
+<script src="js/reveal/reveal.js"></script>
+
+<script>
+  // Full list of configuration options available here:
+  // https://github.com/hakimel/reveal.js#configuration
+  Reveal.initialize({
+    controls: true,
+    progress: true,
+    history: true,
+    center: true,
+
+    theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+    transition: Reveal.getQueryHash().transition || 'linear', // default/cube/page/concave/zoom/linear/fade/none
+
+    // Parallax scrolling
+    // parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+    // parallaxBackgroundSize: '2100px 900px',
+
+    // Optional libraries used to extend on reveal.js
+    dependencies: [
+    { src: 'js/reveal/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+    { src: 'js/reveal/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'js/reveal/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+    { src: 'js/reveal/notes/notes.js', async: true }
+    ]
+  });
+</script>
+
+
+</body>
+</html>
